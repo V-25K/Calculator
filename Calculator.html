@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="screen">
+        <input id="js-screen" placeholder="00" readonly/>
+      </div>
+      <div class="work-place">
+        <div class="numbers">
+          <div>
+            <button onclick="calculatorNumberInput('7')">7</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('8')">8</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('9')">9</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('4')">4</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('5')">5</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('6')">6</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('1')">1</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('2')">2</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('3')">3</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('00')">00</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('0')">0</button>
+          </div>
+          <div>
+            <button onclick="calculatorNumberInput('.')">.</button>
+          </div>
+        </div>
+        <div class="func">
+          <div class="left-func">
+            <div class="multi">
+              <button onclick="calculatorNumberInput('*');">*</button>
+            </div>
+            <div>
+              <button onclick="calculatorNumberInput('+');">+</button>
+            </div>
+            <div class="equalbtn">
+              <button value="=" onclick="result(); ">=</button>
+            </div>
+            <div class="long-btn">
+              <button class="tall" onclick="reset();">AC</button>
+            </div>
+          </div>
+          <div class="right-func">
+            <div class="multi">
+              <button onclick="calculatorNumberInput('/');">/</button>
+            </div>
+            <div>
+              <button onclick="calculatorNumberInput('-');">-</button>
+            </div>
+            <div>
+              <button onclick="calculatorNumberInput('%');">%</button>
+            </div>
+            <div class="long-btn">
+              <button class="tall" onclick="clearOne();">CE</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
